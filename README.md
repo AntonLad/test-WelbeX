@@ -1,7 +1,6 @@
 # Getting Started with Create React App
 
-This project is a test task. Creates many counters, every fourth of which counts seconds. Other counters are changed by buttons. Each new counter is equal to the sum of all previous counters.
-
+This project is a test task. Forms with validation and Redux. Data write to file.
 ## Available Scripts
 
 In the project directory, you can run:
