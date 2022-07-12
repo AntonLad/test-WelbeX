@@ -1,16 +1,16 @@
 /* eslint-disable import/no-anonymous-default-export */
-const UPDATE_COUNT = 'UPDATE_COUNT' 
+const UPDATE_INFO = 'UPDATE_INFO' 
 
 const initialState = {
-  countArr: []
+  arrayOfForms: {}
 }  
   
 export default (state = initialState, action) => {  
   switch (action.type) {  
-    case UPDATE_COUNT: {  
+    case UPDATE_INFO: {  
       return {  
         ...state,  
-        countArr: action.payload  
+        arrayOfForms: action.payload
       }  
     }  
     default:  
@@ -18,8 +18,8 @@ export default (state = initialState, action) => {
   }  
 } 
 
-export function changeFourCounter(arrayFourCount) {  
+export function makeForm(newForm) {  
   return (dispatch) => {
-    dispatch({ type: UPDATE_COUNT, payload: arrayFourCount })
+    dispatch({ type: UPDATE_INFO, payload: newForm })
   }
 }  

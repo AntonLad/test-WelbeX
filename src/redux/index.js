@@ -2,7 +2,7 @@ import { createStore, compose, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk' 
 
-import createRootReducer from './reducers'  
+import createRootReducer from './reducers/index.js'  
 
 const middleware = [thunk]
 const initialState = {}

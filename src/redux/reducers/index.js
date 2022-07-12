@@ -1,11 +1,9 @@
 import { combineReducers } from 'redux'  
-import count from './count'
-import array from './arrayOfCount'
+import forms from './forms.js'
 
   
 const createRootReducer = () => combineReducers({
-    count,
-    array, 
+    forms, 
 })  
   
 export default createRootReducer

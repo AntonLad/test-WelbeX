@@ -1,9 +1,28 @@
 .App {
-  text-align: center;
- 
+  display: flex;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 60px;
+  width: 1440px;
+  height: 731px;;
+  border-radius: 8px;
+  margin: 0 auto;
 }
+/* 
+.mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  width: 940px;
+  height: 375px;
+} */
 
-.mainButtonAdd{
+
+
+
+/* .mainButtonAdd{
   height: 40px;
   padding: 0 10px;
   font-size: 15px;
@@ -75,4 +94,4 @@
 }
 .countInterval {
   font-size: 20px;
-}
+} */
