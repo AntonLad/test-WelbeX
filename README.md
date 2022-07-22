@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project is a test task. Forms with validation and Redux. Data write to file.
+This project is a test task. Table with filter and sort. Data get from MongoDB.
 ## Available Scripts
 
 In the project directory, you can run:
