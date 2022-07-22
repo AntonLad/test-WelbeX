@@ -30,39 +30,5 @@ h1 {
   margin: 45px 0;
 }
 
-.logo {
-  width: 474.46px;
-  height: 70px;
-}
-
-.mainText {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  width: 940px;
-  height: 375px;
-  text-align: justify;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #353238;
-}
-
-.form {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 20px;
-  width: 440px;
-  height: auto;
-  background: #FFFFFF;
-  box-shadow: 0px 5px 20px rgba(53, 50, 56, 0.14);
-  border-radius: 8px;
-}
 
 
