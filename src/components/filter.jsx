@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 
 export default function Filter({ setArray }) {
+  console.log("TEST")
   const [value, setValue] = useState({})
   
   // контролируемый инпут для фильтрации
@@ -12,14 +13,13 @@ export default function Filter({ setArray }) {
       return { ...value,  ...newValue }})
   }
 
-  // получаем данные из select
-  const columnSelected = document.getElementById("column")
-  const changeColumn = () => {
-    setValue({ ...value, column:  columnSelected?.options[columnSelected?.selectedIndex]?.value })
+
+  const changeColumn = (e) => {
+    setValue({ ...value, column:  e.target.value })
   }
-  const conditionSelected = document.getElementById("condition")
-  const changeCondition = () => {
-    setValue({ ...value, condition:  conditionSelected?.options[conditionSelected?.selectedIndex]?.value })
+  
+  const changeCondition = (e) => {
+    setValue({ ...value, condition:  e.target.value })
   }
 
   // отправляем данные для фильтрации на сервер, получаем отфильтрованный массив, заносим его через setArray в array
@@ -36,14 +36,14 @@ export default function Filter({ setArray }) {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '100px' }}>
-      <select id="column" name="column" onClick={changeColumn}>
+      <select id="column" name="column" onClick={(e) => changeColumn(e)}>
         <option value="" disabled selected>Выберите колонку</option>
         <option value="date">Дата</option>
         <option value="title">Название</option>
         <option value="amount">Количество</option>
         <option value="distance">Расстояние</option>
       </select>
-      <select id="condition" name="condition" onClick={changeCondition}>
+      <select id="condition" name="condition" onClick={(e) => changeCondition(e)}>
       <option value="" disabled selected>Выберите условие</option>
         <option value="equals">Равно</option>
         <option value="less">Меньше</option>
